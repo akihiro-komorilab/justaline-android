@@ -15,14 +15,14 @@
 package com.arexperiments.justaline.analytics;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.util.Log;
 
 import com.arexperiments.justaline.App;
 import com.arexperiments.justaline.BuildConfig;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
+//import com.google.firebase.crash.FirebaseCrash;
 
 
 /**
@@ -134,7 +134,7 @@ public class Fa {
         if (BuildConfig.DEBUG) {
             return;
         }
-        FirebaseCrash.report(throwable);
+//        FirebaseCrash.report(throwable);
     }
 
     /**
@@ -146,8 +146,8 @@ public class Fa {
             return;
         }
 
-        FirebaseCrash.logcat(Log.WARN, TAG, logMessage);
-        FirebaseCrash.report(throwable);
+//        FirebaseCrash.logcat(Log.WARN, TAG, logMessage);
+//        FirebaseCrash.report(throwable);
     }
 
     /**
